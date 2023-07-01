@@ -17,6 +17,7 @@ body{
   align-items: center;
   justify-content: space-between;
   background-color: #63686f;
+  padding-left: 2%;
 }
 
 .TopBar h1 {
@@ -63,7 +64,7 @@ body{
   cursor: pointer;
   transform: scale(1.5);
   padding: 1%;
-  
+  padding-right: 0.2%;
 }
 
 .delete-icon{
@@ -76,4 +77,8 @@ body{
 .edit-icon:hover, 
 .delete-icon:hover {
   opacity: 0.5;
+}
+
+.add-form {
+  padding-right: 200px;
 }

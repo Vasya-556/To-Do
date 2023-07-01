@@ -1,11 +1,23 @@
-import React from 'react';
-import { IoAddCircleOutline } from "react-icons/io5";
+import React, { useState } from 'react';
+import { IoAddCircleOutline } from 'react-icons/io5';
+import AddForm from './Add';
 
 function AddTask() {
+  const [showForm, setShowForm] = useState(false);
+
+  const handleAddClick = () => {
+    setShowForm(!showForm);
+  };
+
   return (
-        <button className='AddTask'>
-            <IoAddCircleOutline />
+    <div>
+      <div>
+      {showForm && <AddForm />}
+        <button className="AddTask" onClick={handleAddClick}>
+          <IoAddCircleOutline />
         </button>
+      </div>
+    </div>
   );
 }
 

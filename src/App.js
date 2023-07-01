@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './components/Header';
 import TopBar from './components/TopBar';
-import Task from './components/Task';
+import Tasks from './components/Tasks';
 
 function App() {
   return (
     <div>
       <Header/>
       <TopBar/>
-      <Task />
+      <Tasks />
     </div>
   );
 }
