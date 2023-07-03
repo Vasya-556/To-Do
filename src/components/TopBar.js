@@ -4,7 +4,7 @@ import AddTask from './AddTask';
 function TopBar() {
   return (
     <div className='TopBar'>
-        <h1>To-Do List:</h1>
+        <h1>List:</h1>
         <AddTask />
     </div>
   );

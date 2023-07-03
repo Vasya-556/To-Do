@@ -29,7 +29,6 @@ const AddForm = () => {
       });
       console.log('Document added with ID:', docRef.id);
 
-      // Очищення форми після успішного додавання документа
       setTaskName('');
       setTaskDescription('');
     } catch (error) {
@@ -54,7 +53,7 @@ const AddForm = () => {
         placeholder="Task Description"
         required
       ></textarea>
-      <button type="submit" onClick={handleSubmit}>Add</button>
+      <button className='add-button' type="submit" onClick={handleSubmit}>Add</button>
     </form>
   );
 };

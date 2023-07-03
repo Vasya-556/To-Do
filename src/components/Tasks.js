@@ -46,7 +46,7 @@ function Tasks() {
           />
         ))
       ) : (
-        <div>No tasks available</div>
+        <div className='no-task'>No tasks available</div>
       )}
     </div>
   );
