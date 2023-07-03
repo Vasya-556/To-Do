@@ -24,7 +24,6 @@ function EditTask({ taskId, initialName, initialDescription, toggleEdit }) {
       });
       console.log('Document updated successfully');
 
-      // Закриття форми редагування після збереження даних
       toggleEdit();
     } catch (error) {
       console.error('Error updating document:', error);
@@ -46,7 +45,7 @@ function EditTask({ taskId, initialName, initialDescription, toggleEdit }) {
         onChange={handleEditDescriptionChange}
         required
       ></textarea>
-      <button type='submit'>Save</button>
+      <button className='edit-button' type='submit'>Save</button>
     </form>
   );
 }

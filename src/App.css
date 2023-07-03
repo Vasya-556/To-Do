@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 
 body{
-  background-color: #8c9198;
+  background-image: url("./body-background.svg");
 }
 
 .Header {
-  background-color: #474a4f;
   padding: 20px;
   text-align: center;
   font-size: 24px;
@@ -16,7 +15,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #63686f;
   padding-left: 2%;
 }
 
@@ -41,7 +39,7 @@ body{
 }
 
 .Task {
-  background-color: rgb(53, 53, 104);
+  background-image: url("./task-background.svg");
   margin: 1%;
 }
 
