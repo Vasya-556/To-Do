@@ -80,5 +80,39 @@ body{
 }
 
 .add-form {
-  padding-right: 200px;
+  padding-right: 20px;
 }
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+/* 
+
+
+.add-name,
+.add-description {
+  margin-bottom: 10px;
+}
+
+.add-task-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-task-button svg {
+  margin-right: 5px;
+}
+
+*/

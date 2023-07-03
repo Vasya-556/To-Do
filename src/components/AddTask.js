@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoAddCircleOutline } from 'react-icons/io5';
-import AddForm from './Add';
+import AddForm from './AddForm';
 
 function AddTask() {
   const [showForm, setShowForm] = useState(false);
@@ -10,13 +10,11 @@ function AddTask() {
   };
 
   return (
-    <div>
-      <div>
+    <div className="add-task-container">
       {showForm && <AddForm />}
-        <button className="AddTask" onClick={handleAddClick}>
-          <IoAddCircleOutline />
-        </button>
-      </div>
+      <button className="AddTask" onClick={handleAddClick}>
+        <IoAddCircleOutline />
+      </button>
     </div>
   );
 }
