@@ -53,7 +53,7 @@ const AddForm = () => {
         placeholder="Task Description"
         required
       ></textarea>
-      <button className='add-button' type="submit" onClick={handleSubmit}>Add</button>
+      <button className='add-button' type="button" onClick={handleSubmit}>Add</button>
     </form>
   );
 };

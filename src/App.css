@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
 body{
   background-image: url("./body-background.svg");
+  /* background-color: #E3C09A; */
 }
+/* 
+Бежевий: RGB(245, 245, 220)
+Світло-рожевий: RGB(255, 192, 203)
+Коричневий: RGB(165, 42, 42)
+Світло-зелений (колір трави): RGB(144, 238, 144) 
+(12,240,230)
+#4AF00C
+*/
 
 .Header {
   padding: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .TopBar {
@@ -16,6 +30,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding-left: 2%;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .TopBar h1 {
@@ -39,19 +54,16 @@ body{
 }
 
 .Task {
-  background-image: url("./task-background.svg");
   margin: 1%;
 }
 
 .TaskName{
-  font-family: 'Agdasima', sans-serif;
   font-size: 30px;
   padding-top: 10px;
   margin-left: 1%;
 }
 
 .TaskDescription{
-  font-family: 'Agdasima', sans-serif;
   font-size: 22px;
   margin: 1%;
   padding-bottom: 10px;
@@ -83,11 +95,22 @@ body{
   padding-right: 10px;
 }
 
+.Task,
 .no-task {
   background-image: url("./task-background.svg");
+  border-radius: 1pc;
+}
+
+.Task,
+.no-task,
+.TaskDescription,
+.TaskName {
+  font-family: 'Playfair Display', serif;
+}
+
+.no-task {
   margin: 1%;
   padding: 1%;
-  font-family: 'Agdasima', sans-serif;
   font-size: 35px;
 }
 
@@ -107,6 +130,7 @@ body{
 .add-button {
   grid-column: 1;
   grid-row: 2;
+  border-radius: 1pc;
 }
 
 .add-description {
@@ -117,17 +141,26 @@ body{
 
 
 .edit-form {
-
+  background: none;
 }
 
-.edit-name {
-
+.edit-name,
+.edit-description {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
 }
 
 .edit-description{
+  width: 20%;
+}
 
+.edit-description {
+  resize: none; 
 }
 
 .edit-button{
-
+  height: 60px;
+  width: 80px;
+  border-radius: 1pc;
 }
